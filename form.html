@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<!-- 
+
+form
+    data 
+        number 
+            intger
+        charter
+            "1" "A" "#" " "
+            string
+            "hello"
+        boolean
+            true
+            false
+
+        file
+    input
+        type 
+            1 text
+            2 file
+            3 color
+            4 date
+            5 password
+            6 email
+            7 sub
+            8 number
+            9 checkbox
+            10 ra
+
+    select
+        option
+
+    textarea
+        cols
+        rows
+    
+    label 
+-->
+
+<body>
+    <form method="get" action="" autocomplete="on">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="green" />
+
+        </svg>
+
+        <div class="profile_input">
+            <label for="photo" class="cover_user">
+                <img src="./image/user.png" alt="">
+            </label>
+            <input type="file" name="photo" id="photo" hidden accept=".jpg, .png, .pdf, " required>
+        </div>
+        <div class="text_input">
+            <label for="fullname">Full Name: </label>
+            <input type="text" name="fullname" maxlength="40" id="fullname" list="names" placeholder="Full name"
+                required>
+            <datalist id="names">
+                <option value="Ahmadi"></option>
+                <option value="Mohammad"></option>
+                <option value="Ali"></option>
+                <option value="Omid"></option>
+            </datalist>
+        </div>
+        <div class="text_input">
+            <label for="dob">Age</label>
+            <input type="number" max="100" min="1" name="dob" value="7" disabled id="dob" required>
+        </div>
+        <div class="text_input">
+            <label for="Heitgh">Heitgh</label>
+
+            <input type="number" max="3" min="0" name="Heitgh" id="Heitgh" autofocus step="0.01" placeholder="1.75 CM"
+                required>
+
+        </div>
+        <div class="text_input">
+            <label for="phone">Phone</label>
+            <input type="text" max="15" min="10" name="phone" pattern="[0]{2}[0-9]{2}[7]{1}[0-9]{9}" id="phone" required
+                placeholder="+937********">
+        </div>
+        <div class="text_input">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="text_input">
+            <label for="info">Info</label>
+            <textarea id="info" cols="24" rows="8" name="info" placeholder="info" required>
+                Address Kabul Afghansita
+            </textarea>
+        </div>
+        <div class="btn_input">
+            <input type="submit" value="Save">
+        </div>
+
+
+
+
+    </form>
+</body>
+
+</html>

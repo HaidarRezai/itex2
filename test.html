@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./image/irex.png">
+
+    <title>Carts</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
+        body {
+            font-family: "Parkinsans", sans-serif;
+
+            padding: 4rem;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cover {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .cart {
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            grid-template-columns: 100px auto auto;
+            gap: 30px;
+            align-items: center;
+            width: 80%;
+            padding: 5px 10px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px 1px rgb(154, 154, 154);
+            transition: all 250ms;
+        }
+
+        .cart:hover {
+            transform: scale(1.02);
+            box-shadow: 3px 3px 20px 1px rgb(187, 187, 187);
+
+        }
+
+        .cover_img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 1px 1px 8px 1px rgb(121, 121, 121);
+        }
+
+        .cover_img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            gap: 20px;
+            cursor: pointer;
+
+        }
+
+        .icons i {
+            background-color: rgb(212, 212, 212);
+            padding: 10px;
+            font-size: 25px;
+            box-shadow: 2px 2px 10px 1px rgb(182, 182, 182);
+            border-radius: 50%;
+
+        }
+
+        .icons i:hover {
+            transform: scale(1.08);
+            box-shadow: none;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header div {
+            background-color: rgb(111, 243, 111);
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+
+        div.primary {
+            background-color: rgb(243, 234, 111);
+        }
+    </style>
+    <!-- 
+ 
+    table 
+    thead 
+    tbody
+    tr
+    th
+    td
+    span div 
+-->
+</head>
+
+<body>
+    <div class="cover">
+        <div class="cart">
+            <div class="cover_img">
+                <img src="./image/bg.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="header">
+                    <h1>Hello</h1>
+                    <div>new</div>
+                    <div class="primary">info</div>
+                    <div>Job</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores delectus repellat ratione, at
+                    repellendus tempore odio ducimus accusantium deleniti quisquam quae nam quidem, placeat veritatis
+                    libero magni. Optio, repellendus!</p>
+                <address>Kabul Afghanistan 13th</address>
+            </div>
+            <div class="icons">
+                <i class='bx bxs-color'></i>
+                <i class='bx bx-cart-add'></i>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cover_img">
+                <img src="./image/bg.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="header">
+                    <h1>Hello</h1>
+                    <div>new</div>
+                    <div class="primary">info</div>
+                    <div>Job</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores delectus repellat ratione, at
+                    repellendus tempore odio ducimus accusantium deleniti quisquam quae nam quidem, placeat veritatis
+                    libero magni. Optio, repellendus!</p>
+                <address>Kabul Afghanistan 13th</address>
+            </div>
+            <div class="icons">
+                <i class='bx bxs-color'></i>
+                <i class='bx bx-cart-add'></i>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cover_img">
+                <img src="./image/bg.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="header">
+                    <h1>Hello</h1>
+                    <div>new</div>
+                    <div class="primary">info</div>
+                    <div>Job</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores delectus repellat ratione, at
+                    repellendus tempore odio ducimus accusantium deleniti quisquam quae nam quidem, placeat veritatis
+                    libero magni. Optio, repellendus!</p>
+                <address>Kabul Afghanistan 13th</address>
+            </div>
+            <div class="icons">
+                <i class='bx bxs-color'></i>
+                <i class='bx bx-cart-add'></i>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cover_img">
+                <img src="./image/bg.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="header">
+                    <h1>Hello</h1>
+                    <div>new</div>
+                    <div class="primary">info</div>
+                    <div>Job</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores delectus repellat ratione, at
+                    repellendus tempore odio ducimus accusantium deleniti quisquam quae nam quidem, placeat veritatis
+                    libero magni. Optio, repellendus!</p>
+                <address>Kabul Afghanistan 13th</address>
+            </div>
+            <div class="icons">
+                <i class='bx bxs-color'></i>
+                <i class='bx bx-cart-add'></i>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cover_img">
+                <img src="./image/bg.jpg" alt="">
+            </div>
+            <div class="info">
+                <div class="header">
+                    <h1>Hello</h1>
+                    <div>new</div>
+                    <div class="primary">info</div>
+                    <div>Job</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores delectus repellat ratione, at
+                    repellendus tempore odio ducimus accusantium deleniti quisquam quae nam quidem, placeat veritatis
+                    libero magni. Optio, repellendus!</p>
+                <address>Kabul Afghanistan 13th</address>
+            </div>
+            <div class="icons">
+                <i class='bx bxs-color'></i>
+                <i class='bx bx-cart-add'></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
