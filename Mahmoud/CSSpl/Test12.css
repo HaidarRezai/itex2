@@ -1,0 +1,52 @@
+
+body{
+  background-color: gray;
+  padding: 3rem;
+}
+video{
+  /* border: 1px solid white; */
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px 1px rgb(153, 0, 117);
+  
+}
+.vide{
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.tit{
+  color: aqua;
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 3px whitesmoke;
+  /* width: 40rem; */
+  /* margin: auto; */
+}
+.tit h1{
+  text-align: center;
+}
+.discribetion{
+  width: 40rem;
+  background-color: rgb(76, 76, 76);
+  color: rgb(242, 255, 0);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 3px whitesmoke;
+}
+#buttona{
+  background-color: red;
+  border: none;
+  color: white;
+  height: 36px;
+  width: 85px;
+  border-radius: 50px;
+  right: 20px;
+  font-size: 15px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}

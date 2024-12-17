@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table & Cart</title>
+  <style>
+    body{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+      background-color: gray;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem;
+      gap: 20px;
+
+    }
+    table{
+      border: 1px solid black;
+      text-align: center;
+      width: 80%;
+      
+    }
+    tr th,td{
+      border: 1px solid black;
+      padding: 10px;
+      
+    }
+    th{
+      background-color: black;
+      color: white ;
+    }
+    tr:nth-child(even){
+      background-color: rgb(204, 204, 204);
+      color: black;
+    }
+    .vivo tr:nth-child(odd){
+      background-color:rgb(128, 208, 208) ;
+      color: black;
+
+    }
+    .cover{
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      display: flex;
+      width: 80%;
+      gap: 20px;
+    }
+    .cart{
+      box-shadow: 2px 2px 10px 1px rgb(53, 53, 53);
+      background-color: rgb(255, 255, 139);
+      grid-template-columns: 100px auto auto;
+      border: 1px solid black;
+      align-items: center;
+      border-radius: 15px;
+      padding: 5px 10px;
+      transition: 250ms;
+      display: grid;
+      gap: 25px;
+    }
+    .cart:hover{
+      box-shadow: 2px 2px 20px 1px rgb(53, 53, 53);
+
+    transform: scale(1.05);
+    }
+    .cover_img{
+      box-shadow: 1px 1px 10px 1px black;
+      border-radius: 50%;
+      overflow: hidden;
+      height: 110px;
+      width: 110px;
+    }
+    .cover_img img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .info{
+      line-height: 1;
+
+    }
+    .header{
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+    }
+    .header span{
+      background-color: rgb(98, 93, 93);
+      border-radius: 15px;
+      padding: 5px 20px;
+      color: white;
+    }
+    span.first{
+      background-color: rgb(0, 0, 0);
+    }
+    span.second{
+      background-color: rgb(255, 0, 0);
+    }
+    span.third{
+      background-color: rgb(55, 255, 0);
+    }
+  </style>
+</head>
+
+<body>
+ <table>
+   <thead>
+     <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>L/NAME</th>
+      <th>GENDER</th>
+      <th>PHONE</th>
+      <th>POST</th>
+    </tr>
+  </thead>
+  <tbody class="vivo">
+    <tr>
+      <td>001</td>
+      <td colspan="2">Mahmoud</td>
+      <td>Male</td>
+      <td>+93 765432111</td>
+      <td rowspan="2">WD</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Mohammad</td>
+      <td>Sahilzada</td>
+      <td>Male</td>
+      <td>+93 765432111</td>
+      
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>Mozhgan</td>
+      <td>Karimi</td>
+      <td>Female</td>
+      <td>+93 765432111</td>
+      <td rowspan="2">GD</td>
+    </tr>
+    <tr>
+      <td>004</td>
+      <td>Sami</td>
+      <td>Sharifi</td>
+      <td>Male</td>
+      <td>+93 765432111</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="cover">
+  <div class="cart">
+    <div class="cover_img"><img src="./images/apple.jpg" alt=""></div>
+    <div class="info">
+      <DIV class="header">
+        <h1>APPLE</h1>
+        <span class="first">NEW</span>
+        <span class="second">JOB</span>
+        <span class="third">INFO</span>
+
+      </DIV>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime in doloribus magnam. Odio similique dignissimos accusamus ad. Dolore aliquid accusantium optio id dolores, cumque culpa nostrum voluptate repellat, quidem dolorem.</P>
+      <address class="add"> USA CALFORNIA</address>
+    </div>
+    <div>3</div>
+  </div>
+  <div class="cart">
+    <div class="cover_img"><img src="./images/apple.jpg" alt=""></div>
+    <div class="info">
+      <DIV class="header">
+        <h1>APPLE</h1>
+        <span class="first">NEW</span>
+        <span class="second">JOB</span>
+        <span class="third">INFO</span>
+      </DIV>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime in doloribus magnam. Odio similique dignissimos accusamus ad. Dolore aliquid accusantium optio id dolores, cumque culpa nostrum voluptate repellat, quidem dolorem.</P>
+      <address> USA CALFORNIA</address>
+    </div>
+    <div>3</div>
+  </div>
+  <div class="cart">
+    <div class="cover_img"><img src="./images/apple.jpg" alt=""></div>
+    <div class="info">
+      <DIV class="header">
+        <h1>APPLE</h1>
+        <span class="first">NEW</span>
+        <span class="second">JOB</span>
+        <span class="third">INFO</span>
+      </DIV>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime in doloribus magnam. Odio similique dignissimos accusamus ad. Dolore aliquid accusantium optio id dolores, cumque culpa nostrum voluptate repellat, quidem dolorem.</P>
+      <address> USA CALFORNIA</address>
+    </div>
+    <div>3</div>
+  </div>
+  <div class="cart">
+    <div class="cover_img"><img src="./images/apple.jpg" alt=""></div>
+    <div class="info">
+      <DIV class="header">
+        <h1>APPLE</h1>
+        <span class="first">NEW</span>
+        <span class="second">JOB</span>
+        <span class="third">INFO</span>
+      </DIV>
+      <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime in doloribus magnam. Odio similique dignissimos accusamus ad. Dolore aliquid accusantium optio id dolores, cumque culpa nostrum voluptate repellat, quidem dolorem.</P>
+      <address> USA CALFORNIA</address>      
+    </div>
+    <div>3</div>
+  </div>
+</div>
+</body>
+</html>
