@@ -1,0 +1,94 @@
+
+  body{
+    padding: 0 2rem;
+    background-color: #f3f3f3;
+  }
+  form{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 3px 3px 10px 1px black;
+    border-radius: 20px;
+  }
+  .cover_user{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px gray;
+  }
+  .cover_user img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .prof_user{
+    display: flex;
+    justify-content: center;
+    margin-top: -55px;
+  }
+  .text_input{
+    display: grid;
+    grid-template-columns: 6rem auto ;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .text_input ::placeholder{
+    font-family:'Times New Roman', Times, serif;
+  }
+  .text_input input,textarea,select{
+    border: 1px solid rgb(148, 148, 148);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .text_input input:focus
+  ,textarea:focus
+  ,select:focus{
+    outline: 1px solid red;
+    border: none;
+  }
+  .btn_input{
+    display: flex;
+    justify-content: center;
+  }
+  .btn_input input{
+    background-color: gray;
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  .suporter{
+    display: flex;
+    justify-content: center;
+  }
+  #a{
+    color: blue;
+  }
+  #b{
+    color: red;
+  }
+  #c{
+    color: rgb(255, 209, 4);
+  }
+  #d{
+    color: blue;
+  }
+  #e{
+    color: green;
+  }
+  #f{
+    color: red;
+  }
+  h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: -50px;
+    /* border: 1px solid black; */
+    margin-top: -8px;
+    margin-bottom: 10px;
+  }
