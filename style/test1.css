@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Pacifico&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Mada:wght@200..900&family=Pacifico&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap');
+
+@font-face {
+    font-family: eng1;
+    src: url('./../font/Playwrite_TZ_Guides/PlaywriteTZGuides-Regular.ttf');
+}
+
+body {
+    background-color: #f3f3f3;
+    padding: 3rem;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    background-color: green;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 1px rgb(132, 132, 132);
+    transition: all 250ms;
+}
+
+a:hover {
+    box-shadow: 3px 3px 20px rgb(120, 120, 120);
+    transform: scale(1.04);
+}
+
+a:visited {
+    color: rgb(0, 254, 17);
+    text-decoration: none;
+}
+
+a:link {
+    color: goldenrod;
+}
+
+a:active {
+    color: yellow;
+    background-color: red;
+}
+
+.farsi {
+    font-family: "Mada", sans-serif;
+}
+
+div {
+
+    width: 50%;
+    box-shadow: 2px 3px 10px 1px black;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+}
+
+div h1 {
+    color: green;
+    text-shadow: 10px 10px 10px black;
+}
+
+div h1 span {
+    color: blue;
+}
+
+div p img {
+    vertical-align: sub;
+}
+
+p {
+    white-space: wrap;
+}

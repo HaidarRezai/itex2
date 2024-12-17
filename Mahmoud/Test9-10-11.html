@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insert Cart</title>
+  <link rel="stylesheet" href="./CSSpl/TEst9-10-11.css">
+</head>
+<body>
+  <form method="post" action="" autocomplete="on">
+    <div class="prof_user">
+      <label for="photo"><img src="./images/a (8).jpg" alt="" class="cover_user"></label>
+      <input type="file" id="photo" hidden accept=".jpg, .png" required>
+    </div>
+    <div class="suporter">
+      <label for="google">
+          <h1>
+            <span id="a">G</span>
+            <span id="b">o</span>
+            <span id="c">o</span>
+            <span id="d">g</span>
+            <span id="e">l</span>
+            <span id="f">e</span>
+          </h1>
+      </label>
+    </div>
+    <div class="text_input">
+      <label for="fullname">Full Name:</label>
+      <input type="text" name="fullname" list="Names" id="full" autofocus placeholder="Full Name" maxlength="40" required value="">
+      <datalist id="Names">
+        <option value="Mahmoud"></option>
+        <option value="Jamshid"></option>
+        <option value="Moswer"></option>
+        <option value="Nasir"></option>
+        <option value="Mobin"></option>
+      </datalist>
+    </div>
+    <div class="text_input">
+      <label for="date">Date of Birth:</label>
+      <input type="date" autofocus id="date" required>
+    </div>
+    <div class="text_input">
+      <label for="Age">Age:</label>
+      <input type="number" max="100" min="1" id="Age" autofocus placeholder="How old are you?" required>
+      
+    </div>
+    <div class="text_input">
+    <label for="height">Height:</label>
+      <input type="number" max="3" min="0" id="height" autofocus step="0.01" placeholder="2.00 CM" required>
+      
+    </div>
+    <div class="text_input">
+      <label for="phone">Phone:</label>
+      <input type="text" max="15" min="10" id="phone" autofocus pattern="[0]{2}[0-9]{2}[7]{1}[0-9]{8}" placeholder="+937********" required>
+    </div>
+  <div class="text_input">
+   <label for="gender">Gender:</label>
+   <select name="gender" id="gender" name="gender" >
+    <option value="">Male</option>
+    <option value="">Female</option>
+   </select>
+  </div>
+    <div class="text_input">
+      <label for="info">Info:</label>
+      <textarea id="info" cols="20" name="info" rows="8" autofocus placeholder="Info" required></textarea>
+    </div>
+    <div class="btn_input">
+      <input type="submit" name="" id="" value="Send">
+    </div>
+  </form>
+</body>
+</html>
