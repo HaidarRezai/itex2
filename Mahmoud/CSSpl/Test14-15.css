@@ -1,0 +1,64 @@
+
+body{
+  padding: 20px;
+  background-color: #F3F3F3;
+
+}
+div{
+  background-color: white;
+  box-shadow: 2px 3px 10px 1px black;
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  text-align: rtl;
+  
+}
+div p{
+  text-align-last: left;
+  text-transform: capitalize;
+  text-indent: 30px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-wrap: wrap;
+  font-weight: bold;
+  
+}
+div h1{
+  word-spacing:-50px;
+  text-decoration-line: overline underline;
+  text-shadow: 20px 20px 10px black;
+  font-family:'Times New Roman', Times, serif;
+}
+p span{
+  text-transform: uppercase;
+}
+#a{
+  color:rgb(0, 255, 0) ;
+}
+#b{
+  color:red ;
+}
+#c{
+  color:yellow ;
+}
+#d{
+  color:blue ;
+}
+#e{
+  color:orange ;
+}
+#f{
+  color:yellow ;
+}
+#g{
+  color:blue ;
+}
+#h{
+  color:red ;
+}
+div p img{
+  vertical-align: sup;
+  width: 100px;
+  
+}
