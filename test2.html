@@ -65,7 +65,7 @@
         </div>
         <div>
             <h1>Our courses serviece</h1>
-            <button>
+            <button onclick="popupWindow()">
                 <span>Contact us</span>
                 <div><i class='bx bx-up-arrow-alt'></i></div>
             </button>
@@ -89,6 +89,20 @@
             </div>
         </div>
     </footer>
+    <div class="popupWindow" id="popup">
+        <div class="popupMain">
+            <div class="popupHeader" ondblclick="popupWindow_close()">
+                <i class='bx bx-x' ondblclick="popupWindow_close()"></i>
+            </div>
+            <div class="popupWindow-contant">
+                <h1>Hello CSS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quia suscipit quod
+                    officiis nobis dignissimos aut, odio eos praesentium laudantium ducimus doloribus qui deleniti
+                    magnam in corrupti impedit saepe!</p>
+                <img src="./image/image2.jpg" alt="">
+            </div>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

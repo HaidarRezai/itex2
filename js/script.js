@@ -5,7 +5,12 @@ function dark() {
 }
 function removeDark() {
     localStorage.setItem('dark', '');
-    document.getElementById("body").classList.add(localStorage.getItem("dark"));
-
+    document.getElementById("body").classList.remove(localStorage.getItem("dark"));
 }
-document.getElementById("body").classList.add(localStorage.getItem("dark"));
+
+function popupWindow() {
+    document.getElementById("popup").classList.add("showWindow")
+}
+function popupWindow_close() {
+    document.getElementById("popup").classList.remove("showWindow")
+}
