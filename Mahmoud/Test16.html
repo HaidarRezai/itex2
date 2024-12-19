@@ -5,17 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./CSSpl/Test16.css">
+  <link rel="stylesheet" href="./CSSpl/Test16.js">
 </head>
-<body>
+<body id="body">
   <header>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Edit</a></li>
-      <li><a href="#">Content</a></li>
-      <li><a href="#">Product</a></li>
-      <li><a href="#">Download</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Edit</a></li>
+        <li><a href="#">Content</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="./images/forest.jpg" alt="">
+    </div>
+    <button onclick="dark()" class="drk">
+      <i>
+        <strong>
+          Dark
+        </strong>
+      </i>
+    </button>
+    <button onclick="light()" class="wit">
+      <i>
+        <strong>
+          Light
+        </strong>
+      </i>
+    </button>
+    <div class="prof">
+      <span>Ajmal Noori</span>
+      <div class="prof_img">
+        <img src="./images/background.jpg" alt="">
+      </div>
+    </div>
   </header>
+
+  <script>
+   function dark() {
+  document.getElementById("body").classList.add('dark');
+}
+function light() {
+  document.getElementById("body").classList.remove('dark');
+}
+  </script>
 </body>
 </html>
