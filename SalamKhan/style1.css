@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(#f3f3f3,#ffffff );
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+div{
+    color: wheat;
+    box-shadow: 2px 2px 2px 1px black;
+    width: 60%;
+    margin: auto;
+    height: 35rem;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: auto;
+
+    background-image:url('./../image/irex.png'),url('./../image/car.jpg') ;
+    background-repeat: no-repeat;
+    background-size:10%,cover;
+    background-position:bottom left,center;
+}
+p {
+   border: 10px solid rgb(119, 3, 3);
+    padding: 20px 10px ;
+    outline: 10px solid green;
+    outline-offset: 5px;
+    color: rgb(0, 255, 68);
+}
