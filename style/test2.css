@@ -260,18 +260,84 @@ main section.part1 .part1-img img {
 }
 
 .part2 .cart {
-
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 200px;
+    height: 100px;
+
     line-height: 0.5;
-    background-color: var(--bg-color-2);
+    background-color: #686868;
     color: var(--white);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 50px 100px 1px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 3s ea;
+}
+
+.part2 .cart:hover {
+    width: 400px;
+    height: 200px;
+}
+
+.loader {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+    z-index: 100000;
 }
 
 
+
+
+@keyframes loader {
+    0% {
+        transform: scale(1);
+        outline-offset: 10px;
+
+
+    }
+
+    100% {
+        transform: scale(1.5);
+        outline-offset: 50px;
+        border: 10px double rgb(30, 0, 255);
+
+
+    }
+}
+
+.load {
+    background-image: radial-gradient(rgb(177, 177, 177), white);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 10px double blue;
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+}
+
+.load img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
 
 
 
