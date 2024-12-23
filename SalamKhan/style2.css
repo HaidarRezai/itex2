@@ -1,4 +1,4 @@
-body{
+:root{
     --background-color: #f3f3f3;
     --background-color-2:#2f2f2f;
     --white:white;
@@ -18,24 +18,23 @@ body{
     --size3:30px;
     --size4:4rem;
 }
-
-.dark{
-    --background-color: black;
-    --background-color-2:white;
+.DARK{
+    --background-color:#030303;
+    --background-color-2:#cdcdcd;
     --white:black;
     --blak:white;
+    
 
 }
-
-
-
 body{
     background-color:var(--background-color);
     color: var(--black);
     margin: 0;
     padding: 0;
     font-size:var(--text-size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/* -----------------------------------start header------------- */
 header{
     box-shadow: var(--shadow);
     
@@ -91,8 +90,71 @@ header nav ul li a{
     width: 100px;
     height: 100px;
     object-fit:cover;
+}
+
+/* -------------------------------- end header-------------- */
+main{
+    height:90vh ;
+}
+/* -------------------------------- start footer--------------- */
+footer{
+    background-color: var(--blak);
+    color: var(--white);
+    padding: var(--size1) var(--size4);
+    display: grid;
+    grid-template-columns:34% 34% 34%;
+    justify-content: space-between;
+    gap:10px;
+    
+}
+footer div:nth-child(1){
+    grid-column-start:1;
+    grid-column-end:4;
+    border-bottom:1px solid gray;
+    text-align: center;
+}
+/* -------------couls 1---------------------- */
+footer div:nth-child(2) h1{
+    font-size:larger;
+}
+footer div:nth-child(2) p{
+    font-size:medium ;
+}
+/* -------------couls 2---------------------- */
+footer div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div:nth-child(3) h1{
+    font-size:3rem;
+    text-align:center;
+}
+footer div:nth-child(3) button{
+    width: 80%;
+    border-radius:30px;
+    display: flex;
+    padding:2px 2px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+footer div:nth-child(3)  div{
+    border-radius:55px;
+    height:3rem;
+    width:3rem;
+    border:1px solid black;
+    color: var(--white); 
+    background-color:var(--blak) ;
+    font-size: 3%;
     
 
+}
+footer div:nth-child(3) button span{
+    font-size:large;
+    padding: 0 45px;
 
 }
 
+
+/* -------------------------------- end footer---------------- */

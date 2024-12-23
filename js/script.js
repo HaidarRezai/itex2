@@ -14,3 +14,11 @@ function popupWindow() {
 function popupWindow_close() {
     document.getElementById("popup").classList.remove("showWindow")
 }
+
+
+function navOn() {
+    document.getElementById("header").classList.add("onNav")
+}
+function navOff() {
+    document.getElementById("header").classList.remove("onNav")
+}

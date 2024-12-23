@@ -1,3 +1,8 @@
-document.getElementById("body").classList.add('dark');
 
-document.getElementById("body").classList.remove('dark');
+function DARK(){
+ document.getElementById("body").classList.add('DARK');
+   
+}
+function removeDARK(){
+ document.getElementById("body").classList.remove('DARK');
+}

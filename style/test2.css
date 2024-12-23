@@ -154,7 +154,6 @@ header nav ul li a {
 
 
 main {
-
     padding: var(--s1) var(--s4);
 }
 
@@ -270,15 +269,12 @@ main section.part1 .part1-img img {
     background-color: #686868;
     color: var(--white);
     padding: 20px;
-    border-radius: 50px 100px 1px 20px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: all 3s ea;
 }
 
-.part2 .cart:hover {
-    width: 400px;
-    height: 200px;
-}
+
 
 .loader {
     position: fixed;
@@ -293,6 +289,7 @@ main section.part1 .part1-img img {
     justify-content: center;
     visibility: visible;
     z-index: 100000;
+    visibility: hidden;
 }
 
 
@@ -337,19 +334,9 @@ main section.part1 .part1-img img {
     width: 90%;
     height: 90%;
     object-fit: cover;
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ------------------------------------- start footer ------------------------------ */
@@ -457,6 +444,113 @@ footer div:nth-child(4) ul li a {
 
 .contact-us div:last-child() h1 {
     font-size: larger;
+
+}
+
+.phone_nav {
+    width: 100%;
+    box-shadow: 2px 2px 10px 1px rgb(170, 170, 170);
+    display: none;
+    justify-content: space-between;
+    /* gap: 30px; */
+    align-items: center;
+    padding: 20px;
+
+}
+
+.phone_nav .cover-logo-nav {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+.phone_nav .cover-logo-nav img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.close_icon {
+    font-size: 3rem;
+    margin-right: 20px;
 }
 
 /* ------------------------------------- end footer ------------------------------ */
+
+@keyframes nav {
+    from {
+        left: -40rem;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+
+
+@media all and (max-width:900px) {
+    header {
+        padding: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 1);
+        position: fixed;
+        left: -60rem;
+        width: 100%;
+        height: 100vh;
+        /* animation-name: nav;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1); */
+        transition: 450ms all;
+    }
+
+    .phone_nav {
+        display: flex;
+    }
+
+    .onNav {
+        left: 0;
+    }
+
+    header nav ul {
+        gap: var(--s3);
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+        width: 100%;
+    }
+
+    main section.part1 {
+        gap: 6px;
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    .part2 .cart {
+        gap: 5px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 10px;
+        grid-template-columns: 100%;
+        gap: 5px;
+        width: 100%;
+    }
+
+    footer .head-footer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+}
+
+
+@media screen and (max-width:600px) {}
