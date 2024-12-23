@@ -6,8 +6,6 @@ function light() {
 }
 
 
-
-
 function popup(){
 
   document.getElementById("pop").classList.add("showwindow")

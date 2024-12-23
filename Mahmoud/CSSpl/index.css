@@ -1,0 +1,92 @@
+:root{
+  --bg-color1: #f3f3f3;
+  --bg-color2: black;
+  --bg-color3: white;
+  --white: white;
+  --black: black;
+  --shadow: 2px 2px 10px 1px rgb(79, 79, 79);
+  --txt-s: 22px;
+  --txt-s-p: 16px;
+  --border: 1px solid black;
+  --br1: 10px;
+  --br2: 20px;
+  --br3: 30px;
+  --br-full: 50%;
+  --pad1: 4rem;
+  --pad2: 20px 20px 0px 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body{
+  background-color: var(--bg-color1);
+  font-family: "Merriweather", serif;  
+  color: var(--black);
+  
+}
+/* -------------------------------------header start----------------------------------------- */
+header{
+  padding: var(--pad2);
+}
+header div h1{
+  display: flex;
+  justify-content: center;
+}
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  box-shadow: var(--shadow);
+  padding:10px;
+  margin-left: 10px;
+  margin-right: -10px;
+  border-radius: var(--br1);
+  align-items: center;
+}
+header nav ul li{
+  transition: all 240ms;
+}
+header nav ul li:hover{
+  transform: scale(1.4);
+}
+header nav ul li a{
+  text-decoration: none;
+  color: var(--black);
+  transform: scale(1.6);
+}
+.dark{
+  --bg-color1: black;
+  --bg-color2: white;
+  --black: white;
+  --white: black; 
+  --shadow: 2px 3px 10px 1px rgb(129, 129, 129);
+}
+button.drk{
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: var(--br2);
+  height: 36px;
+  width: 65px;
+  font-family: bold;
+  box-shadow: var(--shadow);
+  border: var(--white);
+}
+button.wit{
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: var(--br2);
+  height: 36px;
+  width: 65px;
+  font-family: bold;
+  box-shadow: var(--shadow);
+  border: var(--white);
+}
+/* -------------------------------------header end----------------------------------------- */
+/* -------------------------------------main start----------------------------------------- */
+.images h1{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+
+
+/* -------------------------------------main end----------------------------------------- */

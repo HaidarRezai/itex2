@@ -17,7 +17,6 @@
     --p3:30px;
     --p4:40px;
 }
-
 body{
     background-color: var(--bg-color);
     color: var(--black);
