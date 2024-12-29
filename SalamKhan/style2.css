@@ -202,12 +202,37 @@ main section.part1 .part-img img{
     align-items: center;
     line-height: 0.6;
     gap: 15px;
-    background-color: var(--background-color-2);
-    color: var(--white);
+    background-color: #353434;
+    color: var(--whi    te);
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 25px 100px 2px 20px;
+    box-shadow: 10px 3px 40px 1px green, -5px 5px 3px 1px white;
+    transition: 250ms all;
 }
-   
+.part2 .cart:hover{
+     transform: scale(1.5);
+}
+.part-img part-right{
+    border-radius: 10px 20px 30px 10px;
+}
+
+
+
+
+.container {
+    background-color: var(--background-light);
+    border-radius: var(--border-radius-light);
+    color: #000;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .container.dark-mode {
+    background-color: var(--background-dark);
+    border-radius: var(--border-radius-dark);
+    color: #fff;
+  }
+
 
 
 

@@ -1,6 +1,6 @@
 
 function DARK(){
- document.getElementById("body").classList.add('DARK');
+ document.getElementById("body").classList.add('light');
    
 }
 function removeDARK(){
