@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Work</title>
+  <link rel="stylesheet" href="./CSSpl/index2.css">
+  <script src="./js/index2.js"></script>
+</head>
+<body>
+  <div class="all">
+
+      <form action="post">
+        <div class="text">
+          <h1>
+            RESULT
+          </h1>
+        </div>
+        <div class="text_input">
+          <label for="nam1">Name:</label>
+          <input type="text" id="nam1" placeholder="Fullname" required>
+        </div>
+        <div class="text_input">
+          <label for="nam2">F/Name:</label>
+          <input type="text" id="nam2" placeholder="Write your father name" required>
+        </div>
+        <div class="text_input">
+          <label for="nam3">ID:</label>
+          <input type="number" id="nam3" placeholder="Write your ID" required>
+        </div>
+        <div class="text_input">
+          <label for="nam4">Class:</label>
+          <input type="text" id="nam4" placeholder="Write your class name" required>
+        </div>
+        <div class="text_input">
+          <label for="nam5">Grade:</label>
+          <input type="number" id="nam5" placeholder="Write your grade" max="12" min="1" required>
+        </div>
+        <div class="input_btn">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+      <div class="fot">
+        <label for="eng">English:</label>
+        <input type="number" id="eng" max="100" min="30">
+        <label for="eng1">Math:</label>
+        <input type="number" id="eng1" max="100" min="30">
+        <label for="eng2">Physic:</label>
+        <input type="number" id="eng2" max="100" min="30">
+        <label for="eng3">Chemistry:</label>
+        <input type="number" id="eng3" max="100" min="30">
+        <label for="eng4">Biology:</label>
+        <input type="number" id="eng4" max="100" min="30">
+        <label for="eng5" class="eng5">Total Score</label>
+        <!-- <input type="number" id="eng5" class="eng5"> -->
+        <p class="pp" id="result"></p>
+        <label for="#"> </label>
+        <div class="btn_positon">
+          <button class="btn" onclick="sum()">=</button>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
