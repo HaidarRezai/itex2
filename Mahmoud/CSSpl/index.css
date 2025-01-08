@@ -2,9 +2,11 @@
   --bg-color1: #f3f3f3;
   --bg-color2: black;
   --bg-color3: white;
+  --bg-rgba:rgba(0, 0, 0, 0.4);
   --white: white;
   --black: black;
-  --shadow: 2px 2px 10px 1px rgb(79, 79, 79);
+  --shadow: 2px 2px 10px 1px rgb(157, 157, 157);
+  --shadow1: 2px 2px 10px 1px purple;
   --txt-s: 22px;
   --txt-s-p: 16px;
   --border: 1px solid black;
@@ -12,81 +14,324 @@
   --br2: 20px;
   --br3: 30px;
   --br-full: 50%;
+  --pad: 10px;
   --pad1: 4rem;
   --pad2: 20px 20px 0px 0px;
+  --pad3: 20px;
+  --pad4: 30px;
 }
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* -------------------------------------Start projecct------------------------------------- */
+.Dark{
+  --bg-color1: #000000;
+  --bg-color2: rgb(255, 255, 255);
+  --bg-color3: black;
+  --white: rgb(0, 0, 0);
+  --black: rgb(255, 255, 255);
+  --bg-rgba:rgba(255, 255, 255, 0.4)
+}
 body{
   background-color: var(--bg-color1);
-  font-family: "Merriweather", serif;  
   color: var(--black);
-  
+  padding: 0;
+  margin: 0;
+  font-size: var(--txt-s);
 }
-/* -------------------------------------header start----------------------------------------- */
+/* -------------------------------------Start Header------------------------------------- */
 header{
-  padding: var(--pad2);
-}
-header div h1{
+  box-shadow: var(--shadow);
+  padding: var(--pad) var(--pad3);
+  background-color: var(--bg-color3);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav{
 }
 header nav ul{
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  box-shadow: var(--shadow);
-  padding:10px;
-  margin-left: 10px;
-  margin-right: -10px;
-  border-radius: var(--br1);
-  align-items: center;
+  gap: var(--pad4);
 }
 header nav ul li{
-  transition: all 240ms;
+  list-style-type: none;
+  transition: all 250ms;
 }
 header nav ul li:hover{
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 header nav ul li a{
   text-decoration: none;
   color: var(--black);
-  transform: scale(1.6);
 }
-.dark{
-  --bg-color1: black;
-  --bg-color2: white;
-  --black: white;
-  --white: black; 
-  --shadow: 2px 3px 10px 1px rgb(129, 129, 129);
+.logo{
+  width: 4rem;
+  overflow: hidden;
 }
-button.drk{
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.drk{
   background-color: var(--black);
   color: var(--white);
   border-radius: var(--br2);
+  box-shadow: var(--shadow);
+  border: none;
   height: 36px;
   width: 65px;
-  font-family: bold;
-  box-shadow: var(--shadow);
-  border: var(--white);
+  justify-content: center;
+  align-items: center;
 }
-button.wit{
+.wit{
   background-color: var(--white);
   color: var(--black);
   border-radius: var(--br2);
+  box-shadow: var(--shadow);
+  display: flex;
+  border: none;
   height: 36px;
   width: 65px;
-  font-family: bold;
+  justify-content: center;
+  align-items: center;
+}
+.prof{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+.prof_pic{
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: var(--br-full);
   box-shadow: var(--shadow);
-  border: var(--white);
+  display: flex;
 }
-/* -------------------------------------header end----------------------------------------- */
-/* -------------------------------------main start----------------------------------------- */
-.images h1{
+.prod_pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* -------------------------------------End Header------------------------------------- */
+.popup{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(7px);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.showwindo{
+  visibility: visible;
+}
+.pop{
+  background-color: var(--white);
+  width: 50%;
+  height: 28rem;
+  position: fixed;
+  padding: var(--pad2);
+  border-radius: var(--br1);
+  /* text-align: center; */
+  position: relative;
+  padding: var(--pad);
+}
+.popup_header{
+  background-color: var(--white);
+  position: absolute;
+  top: -10px;
+  right: 0;
+  border-radius: var(--br1);
+  color: red;
+}
+.popup_contact{
+  overflow: auto;
+  width: 100%;
+  height: auto;
+}
+.popup_contact img{
+  width: 40%;
+
+}
+/* -------------------------------------Strat main------------------------------------- */
+main{
+  padding: var(--pad) var(--pad3);
+  height: 80vh;
+  /* overflow: scroll; */
+}
+main section.part{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 50% 50%;
+  gap: var(--pad);
 }
+main section.part div{
+  /* border: var(--border); */
+  border: none;
+}
+main section .Gallary{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: var(--pad4);
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  overflow: scroll;
+}
+main section .Gallary .cover_img{
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border-radius: var(--br2);
+  transition: all 250ms;
+}
+main section .Gallary .cover_img:hover{
+  transform: scale(1.07);
+}
+main section .Gallary .cover_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main section .Gallary .cover{
+  border: var(--border);
+  width: 150px ;
+  border-radius: var(--br2);
+  box-shadow: var(--shadow1);
+  margin-top: var(--br1);
+  background-color: var(--bg-rgba);
+  backdrop-filter: blur(7px);
+}
+main section .Gallary .cover p{
+  font-size: small;
+  padding: var(--pad);
+  font-weight: bold;
+  color: var(--black);
+}
+/* -------------------------------------End main------------------------------------- */
 
-
-
-
-/* -------------------------------------main end----------------------------------------- */
+/* -------------------------------------Strat footer------------------------------------- */
+footer{
+  background-color: var(--bg-color2);
+  color: var(--white);
+  padding: var(--pad) var(--pad3);
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33%;
+  justify-content: space-between;
+  gap: var(--pad);
+}
+/* ------------------------first-column------------------------- */
+footer .head-footer{
+  margin-right: 10px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-bottom: 1px double rgb(168, 164, 164);
+  text-align: center;
+}
+footer div:nth-child(1) h1 i{
+  transform: rotate(180deg);
+}
+/* ------------------------Secound-column------------------------- */
+footer div:nth-child(2) h1{
+  font-size: larger;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+footer div:nth-child(2) p{
+  font-size: medium;
+}
+/* ------------------------Third-column------------------------- */
+footer div:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+footer div:nth-child(3) h1{
+  font-size: larger;
+  text-align: center;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+footer div:nth-child(3) button{
+  width: 80%;
+  border-radius: var(--br2);
+  background-color: var(--bg-color1);
+  color: var(--black);
+  border: none;
+  padding: 1.5px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div:nth-child(3) button div{
+  border-radius: var(--br-full);
+  height: 2rem;
+  width: 2rem;
+  /* box-shadow: var(--shadow); */
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 2rem;
+  transform: rotate(45deg);
+}
+footer div:nth-child(3) button span{
+font-size: larger;
+padding: 0 50px;
+}
+footer div:nth-child(3) form input{
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: var(--br2);
+  padding: 1.5px 10px;
+  height: 2rem;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ------------------------Forth-column------------------------- */
+footer div:nth-child(4){
+  /* border: 1px solid white; */
+  margin-right: 10px;
+}
+footer div:nth-child(4) h1{
+  font-size: larger;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+footer div:nth-child(4) ul{
+  display: flex;
+  flex-direction: column;
+  gap: var(--br2);
+}
+footer div:nth-child(4) ul li{
+  list-style-type: none;
+}
+footer div:nth-child(4) ul li a{
+  color: var(--white);
+  text-decoration: none;
+}
+.contact{
+  display: flex;
+  justify-content: space-between;
+}
+.contact .us div{
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.contact .us div a{
+  color: var(--white);
+  text-decoration: none;
+}
+.contact div:last-child() h1{
+  font-size: larger;
+}
+.us h1{
+  text-align: center;
+}
+/* -------------------------------------End footer------------------------------------- */

@@ -6,56 +6,358 @@
   <title>Animation</title>
   <link rel="stylesheet" href="./CSSpl/index.css">
   <script src="./CSSpl/index.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body id="body">
   <header>
-    <div>
-      <h1>
-        Weather Conditions
-      </h1>
-    </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Globle</a></li>
-        <li><a href="#">Local</a></li>
+        <li><a href="#">All</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Setting</a></li>
         <li><a href="#">Help</a></li>
-        <br>
-        <button onclick="dark()" class="drk">
-          <i>
-            <strong>
-              Dark
-            </strong>
-          </i>
-        </button>
-        <button onclick="light()" class="wit">
-          <i>
-            <strong>
-              Light
-            </strong>
-          </i>
-        </button>
       </ul>
     </nav>
+    <div class="logo">
+      <img src="./../image/irex.png" alt="">
+    </div>
+    <button onclick="dark()" class="drk">
+      <strong>
+        Dark
+         <i class='bx bxs-moon'></i>
+      </strong>
+    </button>
+    <button onclick="light()" class="wit">
+      <strong>
+        Light
+        <i class='bx bx-sun' ></i>
+      </strong>
+    </button>
+    <div class="prof">
+      <span>Mahmoud Rizaee</span>
+      <div class="prof_pic">
+        <img src="./../image/profile.webp" alt="">
+      </div>
+    </div>
   </header>
   <main>
-    <section>
-      <div class="images">
-        <h1>Kabul</h1>
+   <section class="part">
+    <div class="text_cars">
+      <h1>
+        BMW
+      </h1>
+      <P>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque alias laborum, expedita pariatur beatae iusto, nostrum cumque suscipit veritatis quasi fugiat sed. Labore sapiente officiis inventore culpa accusamus porro!
+      </P>
+      <h1>
+        Lamborgani
+      </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores iure eum recusandae aut vitae at non! Inventore non ipsa vitae debitis velit omnis quam iure aliquam laborum ex.
+      </p>
+      <h1>
+        Mastang
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eum quod tenetur architecto culpa quaerat placeat. Quis eligendi, illo hic rerum sint libero vel natus reprehenderit asperiores commodi, architecto voluptatibus.
+      </p>
+    </div>
+    <div class="Gallary">
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/bmworange.jpg">
+            <img src="./images/cars/bmworange.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>BMW</i>
+          <br>
+          Price: <i>300,000</i>
+        </p>
       </div>
-      <div>
-        <h1>Ghazni</h1>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/farari black.jpg">
+            <img src="./images/cars/farari black.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
       </div>
-      <div>
-        <h1>Hearat</h1>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/lambor silver.jpg">
+            <img src="./images/cars/lambor silver.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
       </div>
-      <div>
-        <h1>Helmand</h1>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/lamborganyorange.jpg">
+            <img src="./images/cars/lamborganyorange.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
       </div>
-    </section>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/lamborganywhite.jpg">
+            <img src="./images/cars/lamborganywhite.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/lamborganyyellow.jpg">
+            <img src="./images/cars/lamborganyyellow.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/mastangblack.jpg">
+            <img src="./images/cars/mastangblack.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/mastangold.jpg">
+            <img src="./images/cars/mastangold.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/MBwhite.jpg">
+            <img src="./images/cars/MBwhite.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/MBwhite2.jpg">
+            <img src="./images/cars/MBwhite2.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/farari blackj.jpg">
+            <img src="./images/cars/farari blackj.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/farariback.jpg">
+            <img src="./images/cars/farariback.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/fararired.jpg">
+            <img src="./images/cars/fararired.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/fariari black.jpg">
+            <img src="./images/cars/fariari black.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/Gerdoo Wallpaper (212).jpg">
+            <img src="./images/cars/Gerdoo Wallpaper (212).jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+      <div class="cover">
+        <div class="cover_img">
+          <a href="./images/cars/gtrcar.jpg">
+            <img src="./images/cars/gtrcar.jpg" alt="Image">
+          </a>
+        </div>
+        <p>
+          Modle: <i>Lamborgani</i>
+          <br>
+          Price: <i>250,000$</i>
+        </p>
+      </div>
+    </div>
+   </section>
   </main>
   <footer>
-
+    <div class="head-footer">
+      <h1>
+    <i class='bx bx-up-arrow-alt'></i>
+        More Information
+    <i class='bx bx-up-arrow-alt'></i>
+      </h1>
+    </div>
+    <div>
+      <h1>
+        Rizaee Cars Website
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu
+        os explicabo, nobis corrupti quibusdam ipsum accusamus volu
+        ptate nostrum iusto, ex voluptatum minima repudiandae fac
+        ere. Quia quos accusamus quae incidunt. Sapiente, repellat.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Placeat quisquam ab atque voluptates in autem iste iure vitae
+        impedit quibusdam. Molestias incidunt itaque excepturi aperiam
+        sunt maxime voluptatibus in esse?
+      </p>
+    </div>
+    <div>
+      <h1>
+        Services
+      </h1>
+      <button onclick="popup()">
+        <span>
+          <strong>
+            Contact Us
+          </strong>
+        </span>
+        <div>
+          <i class='bx bx-up-arrow-alt'></i>
+        </div>
+      </button>
+      <form action="#">
+        <input type="text" placeholder="Feedback">
+        <input type="submit" name="" id="" value="Send">
+      </form>
+    </div>
+    <div class="contact">
+      <div>
+        <h1>
+          Most use Links
+        </h1>
+        <ul>
+          <li><a href="#">All</a></li>
+          <li><a href="#">Image</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Address</a></li>
+        </ul>
+      </div>
+      <div class="us">
+        <h1>
+          Contact us
+        </h1>
+        <br>
+        <div>
+           <i class='bx bx-phone-call' ></i>
+           <a href="tel:0093782084576">0093782084576</a>
+        </div>
+        <div>
+          <i class='bx bxl-whatsapp' ></i>
+          <a href="tel:0093782084576">0093782084576</a>
+        </div>
+        <div>
+          <i class='bx bxl-gmail'></i>
+          <a href="mailto:mahmoudnaeebi@gmail.com">mahmoudnaeebi@gmail.com</a>
+        </div>
+        <div>
+          <i class='bx bx-location-plus'></i>
+          <a>Kabul, Afghanistan</a>
+        </div>
+      </div>
+    </div>
   </footer>
+  <div class="popup" id="popy">
+    <div class="pop">
+      <div class="popup_header">
+        <i class='bx bx-x' onclick="popup_close()"></i>
+      </div>
+      <div class="popup_contact">
+        <h1>
+          <strong>
+            Welcome to our Studio 
+          </strong>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quas quos. Nobis inventore aperiam ducimus magnam dolorum similique perferendis, quasi qui. Molestias saepe, voluptatibus blanditiis nesciunt dicta accusantium consequuntur fuga?
+        </p>
+        <img src="./images/cars/MBwhite2.jpg" alt="">
+      </div>
+    </div>
+  </div>
 </body>
 </html>
